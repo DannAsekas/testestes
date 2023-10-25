@@ -1,0 +1,12 @@
+name: Test
+
+on:
+  workflow_dispatch: # on button click
+  push:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Friendly workflow
+        run: echo 'Hello World!!'
